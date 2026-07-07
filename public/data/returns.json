@@ -1,0 +1,42 @@
+[
+    {
+        "return_id": "1001",
+        "user": "John Doe",
+        "reason": "Defective Product",
+        "status": "active",
+        "action": "refund",
+        "date_ordered": "2024-02-15T10:30:00Z",
+        "date_added": "2024-02-15T10:30:00Z",
+        "date_updated": "2024-02-15T10:30:00Z"
+    },
+    {
+        "return_id": "1002",
+        "user": "Jane Smith",
+        "reason": "Wrong Size",
+        "status": "pending",
+        "action": "exchange",
+        "date_ordered": "2024-02-14T15:45:00Z",
+        "date_added": "2024-02-14T15:45:00Z",
+        "date_updated": "2024-02-14T15:45:00Z"
+    },
+    {
+        "return_id": "1003",
+        "user": "Mike Johnson",
+        "reason": "Not as Described",
+        "status": "processing",
+        "action": "refund",
+        "date_ordered": "2024-02-13T09:20:00Z",
+        "date_added": "2024-02-13T09:20:00Z",
+        "date_updated": "2024-02-13T09:20:00Z"
+    },
+    {
+        "return_id": "1004",
+        "user": "Sarah Wilson",
+        "reason": "Changed Mind",
+        "status": "cancelled",
+        "action": "cancel",
+        "date_ordered": "2024-02-12T14:15:00Z",
+        "date_added": "2024-02-12T14:15:00Z",
+        "date_updated": "2024-02-12T14:15:00Z"
+    }
+] 

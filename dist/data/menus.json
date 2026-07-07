@@ -1,0 +1,64 @@
+[
+    {
+        "menu_id": 1,
+        "name": "Main Menu",
+        "slug": "main-menu",
+        "location": "header",
+        "items": [
+            {
+                "id": 1,
+                "title": "Home",
+                "url": "/",
+                "parent_id": null,
+                "order": 1
+            },
+            {
+                "id": 2,
+                "title": "About",
+                "url": "/about",
+                "parent_id": null,
+                "order": 2
+            },
+            {
+                "id": 3,
+                "title": "Services",
+                "url": "/services",
+                "parent_id": null,
+                "order": 3
+            }
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "menu_id": 2,
+        "name": "Footer Menu",
+        "slug": "footer-menu",
+        "location": "footer",
+        "items": [
+            {
+                "id": 4,
+                "title": "Privacy Policy",
+                "url": "/privacy",
+                "parent_id": null,
+                "order": 1
+            },
+            {
+                "id": 5,
+                "title": "Terms of Service",
+                "url": "/terms",
+                "parent_id": null,
+                "order": 2
+            },
+            {
+                "id": 6,
+                "title": "Contact",
+                "url": "/contact",
+                "parent_id": null,
+                "order": 3
+            }
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    }
+] 

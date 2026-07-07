@@ -1,0 +1,42 @@
+[
+    {
+        "manufacturer_id": "1",
+        "manufacturer_code": "MNF-001",
+        "thumbnail": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&q=80",
+        "name": "Apple",
+        "date_added": "2024-02-01T10:00:00Z",
+        "date_updated": "2024-02-01T10:00:00Z"
+    },
+    {
+        "manufacturer_id": "2",
+        "manufacturer_code": "MNF-002",
+        "thumbnail": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&q=80",
+        "name": "Samsung",
+        "date_added": "2024-02-02T11:00:00Z",
+        "date_updated": "2024-02-02T11:00:00Z"
+    },
+    {
+        "manufacturer_id": "3",
+        "manufacturer_code": "MNF-003",
+        "thumbnail": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&q=80",
+        "name": "Sony",
+        "date_added": "2024-02-03T12:00:00Z",
+        "date_updated": "2024-02-03T12:00:00Z"
+    },
+    {
+        "manufacturer_id": "4",
+        "manufacturer_code": "MNF-004",
+        "thumbnail": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&q=80",
+        "name": "LG",
+        "date_added": "2024-02-04T13:00:00Z",
+        "date_updated": "2024-02-04T13:00:00Z"
+    },
+    {
+        "manufacturer_id": "5",
+        "manufacturer_code": "MNF-005",
+        "thumbnail": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&q=80",
+        "name": "Microsoft",
+        "date_added": "2024-02-05T14:00:00Z",
+        "date_updated": "2024-02-05T14:00:00Z"
+    }
+] 

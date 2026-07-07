@@ -1,0 +1,42 @@
+[
+    {
+        "page_id": 1,
+        "title": "Home",
+        "thumbnail": "/demo/images/product/bamboo-watch.jpg",
+        "author": "John Doe",
+        "date": "2024-01-01",
+        "status": "published"
+    },
+    {
+        "page_id": 2,
+        "title": "About Us",
+        "thumbnail": "/demo/images/product/black-watch.jpg",
+        "author": "Jane Smith",
+        "date": "2024-01-02",
+        "status": "published"
+    },
+    {
+        "page_id": 3,
+        "title": "Contact",
+        "thumbnail": "/demo/images/product/blue-band.jpg",
+        "author": "Mike Johnson",
+        "date": "2024-01-03",
+        "status": "draft"
+    },
+    {
+        "page_id": 4,
+        "title": "Services",
+        "thumbnail": "/demo/images/product/bracelet.jpg",
+        "author": "Sarah Wilson",
+        "date": "2024-01-04",
+        "status": "published"
+    },
+    {
+        "page_id": 5,
+        "title": "Blog",
+        "thumbnail": "/demo/images/product/blue-t-shirt.jpg",
+        "author": "David Brown",
+        "date": "2024-01-05",
+        "status": "published"
+    }
+] 

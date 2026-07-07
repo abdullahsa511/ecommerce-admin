@@ -1,0 +1,42 @@
+[
+    {
+        "subscription_id": "1001",
+        "user": "John Doe",
+        "reason": "Premium Plan Upgrade",
+        "status": "active",
+        "action": "upgrade",
+        "date_ordered": "2024-02-15T10:30:00Z",
+        "date_added": "2024-02-15T10:30:00Z",
+        "date_updated": "2024-02-15T10:30:00Z"
+    },
+    {
+        "subscription_id": "1002",
+        "user": "Jane Smith",
+        "reason": "Monthly Renewal",
+        "status": "pending",
+        "action": "renew",
+        "date_ordered": "2024-02-14T15:45:00Z",
+        "date_added": "2024-02-14T15:45:00Z",
+        "date_updated": "2024-02-14T15:45:00Z"
+    },
+    {
+        "subscription_id": "1003",
+        "user": "Mike Johnson",
+        "reason": "Plan Downgrade",
+        "status": "processing",
+        "action": "downgrade",
+        "date_ordered": "2024-02-13T09:20:00Z",
+        "date_added": "2024-02-13T09:20:00Z",
+        "date_updated": "2024-02-13T09:20:00Z"
+    },
+    {
+        "subscription_id": "1004",
+        "user": "Sarah Wilson",
+        "reason": "Cancellation Request",
+        "status": "cancelled",
+        "action": "cancel",
+        "date_ordered": "2024-02-12T14:15:00Z",
+        "date_added": "2024-02-12T14:15:00Z",
+        "date_updated": "2024-02-12T14:15:00Z"
+    }
+] 

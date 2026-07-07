@@ -1,0 +1,42 @@
+[
+    {
+        "comment_id": 1,
+        "name": "This is a pending comment. This comment is not visible until approved.",
+        "author": "John Doe",
+        "comments_count": 0,
+        "date": "2022-03-15T10:30:00",
+        "status": "Pending"
+    },
+    {
+        "comment_id": 2,
+        "name": "Fff",
+        "author": "Rrf",
+        "comments_count": 0,
+        "date": "2024-02-15T14:20:00",
+        "status": "Pending"
+    },
+    {
+        "comment_id": 3,
+        "name": "giguio",
+        "author": "t test",
+        "comments_count": 0,
+        "date": "2024-03-01T09:15:00",
+        "status": "Pending"
+    },
+    {
+        "comment_id": 4,
+        "name": "test",
+        "author": "test",
+        "comments_count": 0,
+        "date": "2024-03-07T16:45:00",
+        "status": "Pending"
+    },
+    {
+        "comment_id": 5,
+        "name": "test",
+        "author": "test2",
+        "comments_count": 0,
+        "date": "2024-03-07T17:00:00",
+        "status": "Pending"
+    }
+] 

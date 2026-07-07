@@ -1,0 +1,41 @@
+[
+    {
+        "user_id": 1,
+        "username": "admin",
+        "display_name": "Admin User",
+        "first_name": "Admin",
+        "last_name": "User",
+        "email": "admin@example.com",
+        "avatar": "https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png",
+        "role": "administrator",
+        "status": "active",
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "user_id": 2,
+        "username": "editor1",
+        "display_name": "John Editor",
+        "first_name": "John",
+        "last_name": "Editor",
+        "email": "editor1@example.com",
+        "avatar": "https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png",
+        "role": "editor",
+        "status": "active",
+        "created_at": "2024-01-02T00:00:00Z",
+        "updated_at": "2024-01-02T00:00:00Z"
+    },
+    {
+        "user_id": 3,
+        "username": "author1",
+        "display_name": "Jane Author",
+        "first_name": "Jane",
+        "last_name": "Author",
+        "email": "author1@example.com",
+        "avatar": "https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png",
+        "role": "author",
+        "status": "inactive",
+        "created_at": "2024-01-03T00:00:00Z",
+        "updated_at": "2024-01-03T00:00:00Z"
+    }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "country_id": 1,
+    "name": "United Kingdom",
+    "iso": "GB",
+    "status": "Active"
+  },
+  {
+    "country_id": 2,
+    "name": "United States",
+    "iso": "US",
+    "status": "Active"
+  },
+  {
+    "country_id": 3,
+    "name": "Afghanistan",
+    "iso": "AF",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 4,
+    "name": "Albania",
+    "iso": "AL",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 5,
+    "name": "Algeria",
+    "iso": "DZ",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 6,
+    "name": "American Samoa",
+    "iso": "AS",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 7,
+    "name": "Andorra",
+    "iso": "AD",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 8,
+    "name": "Angola",
+    "iso": "AO",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 9,
+    "name": "Anguilla",
+    "iso": "AI",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 10,
+    "name": "Antarctica",
+    "iso": "AQ",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 11,
+    "name": "Antigua and Barbuda",
+    "iso": "AG",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 12,
+    "name": "Argentina",
+    "iso": "AR",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 13,
+    "name": "Armenia",
+    "iso": "AM",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 14,
+    "name": "Aruba",
+    "iso": "AW",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 15,
+    "name": "Australia",
+    "iso": "AU",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 16,
+    "name": "Austria",
+    "iso": "AT",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 17,
+    "name": "Azerbaijan",
+    "iso": "AZ",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 18,
+    "name": "Bahamas",
+    "iso": "BS",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 19,
+    "name": "Bahrain",
+    "iso": "BH",
+    "status": "Disabled"
+  },
+  {
+    "country_id": 20,
+    "name": "Bangladesh",
+    "iso": "BD",
+    "status": "Disabled"
+  }
+] 

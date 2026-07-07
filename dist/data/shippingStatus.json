@@ -1,0 +1,62 @@
+[
+  {
+    "shipping_status_id": 1,
+    "name": "not_fulfilled",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 2,
+    "name": "fulfilled",
+    "created_at": "2024-01-02T00:00:00Z",
+    "updated_at": "2024-01-02T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 3,
+    "name": "partially_fulfilled",
+    "created_at": "2024-01-03T00:00:00Z",
+    "updated_at": "2024-01-03T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 4,
+    "name": "shipped",
+    "created_at": "2024-01-04T00:00:00Z",
+    "updated_at": "2024-01-04T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 5,
+    "name": "partially_shipped",
+    "created_at": "2024-01-05T00:00:00Z",
+    "updated_at": "2024-01-05T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 6,
+    "name": "returned",
+    "created_at": "2024-01-06T00:00:00Z",
+    "updated_at": "2024-01-06T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 7,
+    "name": "partially_returned",
+    "created_at": "2024-01-07T00:00:00Z",
+    "updated_at": "2024-01-07T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 8,
+    "name": "delivered",
+    "created_at": "2024-01-08T00:00:00Z",
+    "updated_at": "2024-01-08T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 9,
+    "name": "canceled",
+    "created_at": "2024-01-09T00:00:00Z",
+    "updated_at": "2024-01-09T00:00:00Z"
+  },
+  {
+    "shipping_status_id": 10,
+    "name": "requires_action",
+    "created_at": "2024-01-10T00:00:00Z",
+    "updated_at": "2024-01-10T00:00:00Z"
+  }
+] 

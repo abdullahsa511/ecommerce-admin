@@ -1,0 +1,74 @@
+[
+  {
+    "language_id": 1,
+    "name": "English",
+    "code": "en_US",
+    "status": "Active",
+    "is_default": true,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 2,
+    "name": "Spanish",
+    "code": "es",
+    "status": "Active",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 3,
+    "name": "French",
+    "code": "fr",
+    "status": "Active",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 4,
+    "name": "German",
+    "code": "de",
+    "status": "Active",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 5,
+    "name": "Italian",
+    "code": "it",
+    "status": "Active",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 6,
+    "name": "Portuguese",
+    "code": "pt",
+    "status": "Active",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 7,
+    "name": "Russian",
+    "code": "ru",
+    "status": "Inactive",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "language_id": 8,
+    "name": "Japanese",
+    "code": "ja",
+    "status": "Inactive",
+    "is_default": false,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  }
+] 

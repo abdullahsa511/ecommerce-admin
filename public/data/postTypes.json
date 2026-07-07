@@ -1,0 +1,72 @@
+[
+  {
+    "post_type_id": 1,
+    "name": "Blog Post",
+    "type": "Content",
+    "source": "Internal",
+    "site_id": 1
+  },
+  {
+    "post_type_id": 2,
+    "name": "Product",
+    "type": "Commerce",
+    "source": "External",
+    "site_id": 1
+  },
+  {
+    "post_type_id": 3,
+    "name": "News Article",
+    "type": "Content",
+    "source": "Internal",
+    "site_id": 2
+  },
+  {
+    "post_type_id": 4,
+    "name": "Event",
+    "type": "Calendar",
+    "source": "Internal",
+    "site_id": 2
+  },
+  {
+    "post_type_id": 5,
+    "name": "Portfolio Item",
+    "type": "Gallery",
+    "source": "External",
+    "site_id": 3
+  },
+  {
+    "post_type_id": 6,
+    "name": "Team Member",
+    "type": "Profile",
+    "source": "Internal",
+    "site_id": 3
+  },
+  {
+    "post_type_id": 7,
+    "name": "Service",
+    "type": "Business",
+    "source": "Internal",
+    "site_id": 4
+  },
+  {
+    "post_type_id": 8,
+    "name": "FAQ",
+    "type": "Support",
+    "source": "External",
+    "site_id": 4
+  },
+  {
+    "post_type_id": 9,
+    "name": "Testimonial",
+    "type": "Review",
+    "source": "External",
+    "site_id": 5
+  },
+  {
+    "post_type_id": 10,
+    "name": "Case Study",
+    "type": "Business",
+    "source": "Internal",
+    "site_id": 5
+  }
+] 

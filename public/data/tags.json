@@ -1,0 +1,37 @@
+[
+    {
+        "tag_id": 1,
+        "name": "Electronics",
+        "slug": "electronics",
+        "description": "Electronic devices and accessories",
+        "thumbnail": "/images/tags/electronics.jpg"
+    },
+    {
+        "tag_id": 2,
+        "name": "Fashion",
+        "slug": "fashion",
+        "description": "Clothing and fashion accessories",
+        "thumbnail": "/images/tags/fashion.jpg"
+    },
+    {
+        "tag_id": 3,
+        "name": "Books",
+        "slug": "books",
+        "description": "Books and literature items",
+        "thumbnail": "/images/tags/books.jpg"
+    },
+    {
+        "tag_id": 4,
+        "name": "Sports",
+        "slug": "sports",
+        "description": "Sports equipment and accessories",
+        "thumbnail": "/images/tags/sports.jpg"
+    },
+    {
+        "tag_id": 5,
+        "name": "Home",
+        "slug": "home",
+        "description": "Home and garden products",
+        "thumbnail": "/images/tags/home.jpg"
+    }
+] 

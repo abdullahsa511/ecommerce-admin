@@ -1,0 +1,47 @@
+[
+    {
+        "tag_id": "1",
+        "thumbnail": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&q=80",
+        "name": "Electronics",
+        "slug": "electronics",
+        "description": "All electronic devices and accessories",
+        "date_added": "2024-02-01T10:00:00Z",
+        "date_updated": "2024-02-01T10:00:00Z"
+    },
+    {
+        "tag_id": "2",
+        "thumbnail": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=200&q=80",
+        "name": "Clothing",
+        "slug": "clothing",
+        "description": "Men's and women's clothing",
+        "date_added": "2024-02-02T11:00:00Z",
+        "date_updated": "2024-02-02T11:00:00Z"
+    },
+    {
+        "tag_id": "3",
+        "thumbnail": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=200&q=80",
+        "name": "Home & Kitchen",
+        "slug": "home-kitchen",
+        "description": "Home appliances and kitchenware",
+        "date_added": "2024-02-03T12:00:00Z",
+        "date_updated": "2024-02-03T12:00:00Z"
+    },
+    {
+        "tag_id": "4",
+        "thumbnail": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&q=80",
+        "name": "Beauty",
+        "slug": "beauty",
+        "description": "Beauty and personal care products",
+        "date_added": "2024-02-04T13:00:00Z",
+        "date_updated": "2024-02-04T13:00:00Z"
+    },
+    {
+        "tag_id": "5",
+        "thumbnail": "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=200&q=80",
+        "name": "Sports",
+        "slug": "sports",
+        "description": "Sports equipment and accessories",
+        "date_added": "2024-02-05T14:00:00Z",
+        "date_updated": "2024-02-05T14:00:00Z"
+    }
+] 

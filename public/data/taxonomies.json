@@ -1,0 +1,72 @@
+[
+  {
+    "taxonomy_id": 1,
+    "name": "Blog Categories",
+    "post_type": "blog",
+    "type": "categories",
+    "site_id": 1
+  },
+  {
+    "taxonomy_id": 2,
+    "name": "Product Categories",
+    "post_type": "product",
+    "type": "categories",
+    "site_id": 1
+  },
+  {
+    "taxonomy_id": 3,
+    "name": "Blog Tags",
+    "post_type": "blog",
+    "type": "tags",
+    "site_id": 1
+  },
+  {
+    "taxonomy_id": 4,
+    "name": "Product Tags",
+    "post_type": "product",
+    "type": "tags",
+    "site_id": 2
+  },
+  {
+    "taxonomy_id": 5,
+    "name": "News Categories",
+    "post_type": "news",
+    "type": "categories",
+    "site_id": 2
+  },
+  {
+    "taxonomy_id": 6,
+    "name": "Event Categories",
+    "post_type": "event",
+    "type": "categories",
+    "site_id": 3
+  },
+  {
+    "taxonomy_id": 7,
+    "name": "Portfolio Categories",
+    "post_type": "portfolio",
+    "type": "categories",
+    "site_id": 3
+  },
+  {
+    "taxonomy_id": 8,
+    "name": "Service Categories",
+    "post_type": "service",
+    "type": "categories",
+    "site_id": 4
+  },
+  {
+    "taxonomy_id": 9,
+    "name": "Team Categories",
+    "post_type": "team",
+    "type": "categories",
+    "site_id": 4
+  },
+  {
+    "taxonomy_id": 10,
+    "name": "FAQ Categories",
+    "post_type": "faq",
+    "type": "categories",
+    "site_id": 5
+  }
+] 

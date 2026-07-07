@@ -1,0 +1,10 @@
+[
+    {
+        "region_group_id": 1,
+        "name": "US Shipping Region"
+    },
+    {
+        "region_group_id": 2,
+        "name": "UK Shipping Region"
+    }
+] 

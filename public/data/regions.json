@@ -1,0 +1,62 @@
+[
+    {
+        "region_id": 1,
+        "name": "Buckinghamshire",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 2,
+        "name": "Caerphilly",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 3,
+        "name": "Cambridgeshire",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 4,
+        "name": "Cardiff",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 5,
+        "name": "Carmarthenshire",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 6,
+        "name": "Ceredigion",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 7,
+        "name": "Cheshire",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 8,
+        "name": "Clackmannanshire",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 9,
+        "name": "Conwy",
+        "country": "United Kingdom",
+        "status": "Active"
+    },
+    {
+        "region_id": 10,
+        "name": "Cornwall",
+        "country": "United Kingdom",
+        "status": "Active"
+    }
+] 

@@ -1,0 +1,72 @@
+[
+  {
+    "product_type_id": 1,
+    "name": "Physical Product",
+    "type": "Tangible",
+    "source": "Internal",
+    "site_id": 1
+  },
+  {
+    "product_type_id": 2,
+    "name": "Digital Download",
+    "type": "Digital",
+    "source": "External",
+    "site_id": 1
+  },
+  {
+    "product_type_id": 3,
+    "name": "Subscription",
+    "type": "Service",
+    "source": "Internal",
+    "site_id": 2
+  },
+  {
+    "product_type_id": 4,
+    "name": "Virtual Service",
+    "type": "Service",
+    "source": "Internal",
+    "site_id": 2
+  },
+  {
+    "product_type_id": 5,
+    "name": "Bundle Package",
+    "type": "Composite",
+    "source": "External",
+    "site_id": 3
+  },
+  {
+    "product_type_id": 6,
+    "name": "Configurable Product",
+    "type": "Variable",
+    "source": "Internal",
+    "site_id": 3
+  },
+  {
+    "product_type_id": 7,
+    "name": "Membership",
+    "type": "Service",
+    "source": "Internal",
+    "site_id": 4
+  },
+  {
+    "product_type_id": 8,
+    "name": "License Key",
+    "type": "Digital",
+    "source": "External",
+    "site_id": 4
+  },
+  {
+    "product_type_id": 9,
+    "name": "Gift Card",
+    "type": "Virtual",
+    "source": "External",
+    "site_id": 5
+  },
+  {
+    "product_type_id": 10,
+    "name": "Customizable Product",
+    "type": "Variable",
+    "source": "Internal",
+    "site_id": 5
+  }
+] 

@@ -1,0 +1,56 @@
+[
+    {
+        "return_status_id":1,
+        "name": "Approved",
+        "created_at": "2024-01-06T00:00:00Z",
+        "updated_at": "2024-01-06T00:00:00Z"
+    },
+    {
+        "return_status_id": 2,
+        "name": "pending",
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "return_status_id": 3,
+        "name": "complete",
+        "created_at": "2024-01-02T00:00:00Z",
+        "updated_at": "2024-01-02T00:00:00Z"
+    },
+    {
+        "return_status_id": 4,
+        "name": "awaiting_package",
+        "created_at": "2024-01-03T00:00:00Z",
+        "updated_at": "2024-01-03T00:00:00Z"
+    },
+    {
+        "return_status_id": 5,
+        "name": "package_received",
+        "created_at": "2024-01-04T00:00:00Z",
+        "updated_at": "2024-01-04T00:00:00Z"
+    },
+    {
+        "return_status_id": 6,
+        "name": "denied",
+        "created_at": "2024-01-05T00:00:00Z",
+        "updated_at": "2024-01-05T00:00:00Z"
+    },
+    {
+        "return_status_id": 7,
+        "name": "Cancelled",
+        "created_at": "2024-01-06T00:00:00Z",
+        "updated_at": "2024-01-06T00:00:00Z"
+    },
+    {
+        "return_status_id": 8,
+        "name": "Rejected",
+        "created_at": "2024-01-06T00:00:00Z",
+        "updated_at": "2024-01-06T00:00:00Z"
+    },
+    {
+        "return_status_id": 9,
+        "name": "Processing",
+        "created_at": "2024-01-06T00:00:00Z",
+        "updated_at": "2024-01-06T00:00:00Z"
+    }
+] 

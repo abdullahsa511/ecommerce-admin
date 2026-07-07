@@ -1,0 +1,1 @@
+class t{constructor(e){this.id=e.id,this.imageWidth=e.imageWidth,this.imageHeight=e.imageHeight,this.leftPx=e.leftPx,this.topPx=e.topPx,this.leftPercent=e.leftPercent,this.topPercent=e.topPercent,this.linkActive=e.linkActive,this.label=e.label,this.href=e.href}}export{t as W};

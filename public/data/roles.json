@@ -1,0 +1,52 @@
+[
+    {
+        "role_id": 1,
+        "name": "Super Administrator",
+        "permissions": "all"
+    },
+    {
+        "role_id": 2,
+        "name": "Administrator",
+        "permissions": "manage_users, manage_roles"
+    },
+    {
+        "role_id": 3,
+        "name": "Site Administrator",
+        "permissions": "manage_site"
+    },
+    {
+        "role_id": 4,
+        "name": "Editor",
+        "permissions": "edit_content"
+    },
+    {
+        "role_id": 5,
+        "name": "Author",
+        "permissions": "create_content"
+    },
+    {
+        "role_id": 6,
+        "name": "Contributor",
+        "permissions": "submit_content"
+    },
+    {
+        "role_id": 7,
+        "name": "Shop",
+        "permissions": "manage_shop"
+    },
+    {
+        "role_id": 8,
+        "name": "Vendor",
+        "permissions": "manage_vendor"
+    },
+    {
+        "role_id": 9,
+        "name": "Rest",
+        "permissions": "view_content"
+    },
+    {
+        "role_id": 10,
+        "name": "Demo",
+        "permissions": "limited_access"
+    }
+]

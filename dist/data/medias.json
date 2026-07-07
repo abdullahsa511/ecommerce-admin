@@ -1,0 +1,246 @@
+{
+    "files": [
+        {
+            "id": 1,
+            "name": "mountain-sunset.jpg",
+            "type": "image",
+            "date": "2024-04-12",
+            "fileSize": "64 KB",
+            "icon": "pi pi-image",
+            "folderId": 1,
+            "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 2,
+            "name": "tropical-beach.jpg",
+            "type": "image",
+            "date": "2024-04-11",
+            "fileSize": "79 KB",
+            "icon": "pi pi-image",
+            "folderId": 7,
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 3,
+            "name": "snowy-peaks.jpg",
+            "type": "image",
+            "date": "2024-04-10",
+            "fileSize": "108 KB",
+            "icon": "pi pi-image",
+            "folderId": 7,
+            "url": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 4,
+            "name": "aerial-view.jpg",
+            "type": "image",
+            "date": "2024-04-09",
+            "fileSize": "196 KB",
+            "icon": "pi pi-image",
+            "folderId": 8,
+            "url": "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 5,
+            "name": "coral-reef.jpg",
+            "type": "image",
+            "date": "2024-04-08",
+            "fileSize": "137 KB",
+            "icon": "pi pi-image",
+            "folderId": 8,
+            "url": "https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 6,
+            "name": "project-brief.pdf",
+            "type": "document",
+            "date": "2024-04-07",
+            "fileSize": "1.2 MB",
+            "icon": "pi pi-file",
+            "folderId": 2,
+            "url": "https://placehold.co/500x500/png?text=PDF"
+        },
+        {
+            "id": 7,
+            "name": "requirements.pdf",
+            "type": "document",
+            "date": "2024-04-06",
+            "fileSize": "850 KB",
+            "icon": "pi pi-file",
+            "folderId": 9,
+            "url": "https://placehold.co/500x500/png?text=PDF"
+        },
+        {
+            "id": 8,
+            "name": "design-mockup.jpg",
+            "type": "image",
+            "date": "2024-04-05",
+            "fileSize": "2.1 MB",
+            "icon": "pi pi-image",
+            "folderId": 9,
+            "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 9,
+            "name": "city-lights.jpg",
+            "type": "image",
+            "date": "2024-04-04",
+            "fileSize": "1.8 MB",
+            "icon": "pi pi-image",
+            "folderId": 3,
+            "url": "https://images.unsplash.com/photo-1515963665762-67b8462dccff?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 10,
+            "name": "urban-street.jpg",
+            "type": "image",
+            "date": "2024-04-03",
+            "fileSize": "2.3 MB",
+            "icon": "pi pi-image",
+            "folderId": 10,
+            "url": "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "id": 11,
+            "name": "product-demo.mp4",
+            "type": "video",
+            "date": "2024-04-02",
+            "fileSize": "15.6 MB",
+            "icon": "pi pi-video",
+            "folderId": 4,
+            "url": "https://placehold.co/500x500/png?text=VIDEO"
+        },
+        {
+            "id": 12,
+            "name": "tutorial.mp4",
+            "type": "video",
+            "date": "2024-04-01",
+            "fileSize": "22.4 MB",
+            "icon": "pi pi-video",
+            "folderId": 11,
+            "url": "https://placehold.co/500x500/png?text=VIDEO"
+        },
+        {
+            "id": 13,
+            "name": "presentation.pptx",
+            "type": "document",
+            "date": "2024-03-31",
+            "fileSize": "4.5 MB",
+            "icon": "pi pi-file",
+            "folderId": 5,
+            "url": "https://placehold.co/500x500/png?text=PPTX"
+        },
+        {
+            "id": 14,
+            "name": "report.xlsx",
+            "type": "document",
+            "date": "2024-03-30",
+            "fileSize": "2.8 MB",
+            "icon": "pi pi-file",
+            "folderId": 12,
+            "url": "https://placehold.co/500x500/png?text=XLSX"
+        },
+        {
+            "id": 15,
+            "name": "contract.docx",
+            "type": "document",
+            "date": "2024-03-29",
+            "fileSize": "1.2 MB",
+            "icon": "pi pi-file",
+            "folderId": 12,
+            "url": "https://placehold.co/500x500/png?text=DOCX"
+        }
+    ],
+    "folders": [
+        {
+            "id": 1,
+            "name": "Nature Photography",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": null
+        },
+        {
+            "id": 7,
+            "name": "Mountains",
+            "size": "2 files",
+            "icon": "pi pi-folder",
+            "parentId": 1
+        },
+        {
+            "id": 8,
+            "name": "Oceans",
+            "size": "2 files",
+            "icon": "pi pi-folder",
+            "parentId": 1
+        },
+        {
+            "id": 2,
+            "name": "Project Documents",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": null
+        },
+        {
+            "id": 9,
+            "name": "Design Assets",
+            "size": "2 files",
+            "icon": "pi pi-folder",
+            "parentId": 2
+        },
+        {
+            "id": 3,
+            "name": "Urban Photography",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": null
+        },
+        {
+            "id": 10,
+            "name": "Night Scenes",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": 3
+        },
+        {
+            "id": 4,
+            "name": "Video Content",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": null
+        },
+        {
+            "id": 11,
+            "name": "Tutorials",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": 4
+        },
+        {
+            "id": 5,
+            "name": "Office Documents",
+            "size": "1 file",
+            "icon": "pi pi-folder",
+            "parentId": null
+        },
+        {
+            "id": 12,
+            "name": "Reports",
+            "size": "2 files",
+            "icon": "pi pi-folder",
+            "parentId": 5
+        },
+        {
+            "id": 6,
+            "name": "Marketing",
+            "size": "0 files",
+            "icon": "pi pi-folder",
+            "parentId": null
+        }
+    ],
+    "metrics": {
+        "images": 7,
+        "documents": 6,
+        "videos": 2,
+        "total": 15
+    }
+}

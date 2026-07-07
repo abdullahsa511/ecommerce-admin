@@ -1,0 +1,548 @@
+<script setup>
+import { ref, onMounted, computed } from 'vue';
+import { useProductQuestionStore } from '../../stores/productQuestion';
+import { storeToRefs } from 'pinia';
+import { useToast } from 'primevue/usetoast';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import Button from 'primevue/button';
+import InputText from 'primevue/inputtext';
+import SplitButton from 'primevue/splitbutton';
+import Tag from 'primevue/tag';
+import Dialog from 'primevue/dialog';
+import router from '../../router';
+import { formatFrontendDate } from '@/utils/DateUtil';
+
+const productQuestionStore = useProductQuestionStore();
+const productQuestions = computed(() => productQuestionStore.productQuestions);
+const { fb, selectedStatus } = storeToRefs(productQuestionStore);
+const selectedProductQuestions = ref([]);
+
+const toast = useToast();
+
+// Modal state
+const showModal = ref(false);
+const selectedProductQuestion = ref(null);
+
+const statusOptions = ['Pending', 'Approved', 'Spam', 'Trash', 'All'];
+const addProductQuestion = () => {
+    router.push('/add-product-question');
+}
+
+// Compute filtered product questions based on selected status
+const filteredProductQuestions = computed(() => {
+    if (!selectedStatus.value || selectedStatus.value === 'All') {
+        return productQuestions.value;
+    }
+    return productQuestions.value.filter(productQuestion => {
+        switch (selectedStatus.value) {
+            case 'Approved':
+                return productQuestion.status === 1;
+            case 'Pending':
+                return productQuestion.status === 0;
+            case 'Spam':
+                return productQuestion.status === 2;
+            case 'Trash':
+                return productQuestion.status === 3;
+            default:
+                return true;
+        }
+    });
+});
+
+const getStatusSeverity = (status) => {
+    const numStatus = Number(status);
+    switch (numStatus) {
+        case 1:
+            return 'success';
+        case 0:
+            return 'warning';
+        case 2:
+            return 'danger';
+        case 3:
+            return 'info';
+        default:
+            return 'warning';
+    }
+};
+
+const getStatusText = (status) => {
+    const numStatus = Number(status);
+    switch (numStatus) {
+        case 1:
+            return 'Approved';
+        case 0:
+            return 'Pending';
+        case 2:
+            return 'Spam';
+        case 3:
+            return 'Trash';
+        default:
+            return 'Unknown';
+    }
+};
+
+const updateProductQuestionStatus = async (productQuestion, newStatus) => {
+    try {
+        await productQuestionStore.updateProductQuestion(productQuestion.product_question_id, { ...productQuestion, status: newStatus });
+        toast.add({
+            severity: 'success',
+            summary: 'Success',
+            detail: 'Product question status updated successfully',
+            life: 3000
+        });
+        productQuestionStore.fetchProductQuestions();
+    } catch (error) {
+        toast.add({
+            severity: 'error',
+            summary: 'Error',
+            detail: 'Failed to update product question status',
+            life: 3000
+        });
+    }
+};
+
+const getActionItems = (data) => {
+    return [
+        {
+            label: 'Approve',
+            icon: 'pi pi-check',
+            command: () => updateProductQuestionStatus(data, 1)
+        },
+        {
+            label: 'Mark as Spam',
+            icon: 'pi pi-ban',
+            command: () => updateProductQuestionStatus(data, 2)
+        },
+        {
+            label: 'Trash',
+            icon: 'pi pi-trash',
+            command: () => updateProductQuestionStatus(data, 3)
+        },
+        {
+            separator: true
+        },
+        {
+            label: 'Delete',
+            icon: 'pi pi-times',
+            class: 'p-error',
+            command: () => deleteProductQuestion(data.product_question_id)
+        }
+    ];
+};
+
+const handleViewClick = (data) => {
+    selectedProductQuestion.value = data;
+    showModal.value = true;
+};
+
+const closeModal = () => {
+    showModal.value = false;
+    selectedProductQuestion.value = null;
+};
+
+onMounted(() => {
+    productQuestionStore.fetchProductQuestions();
+});
+
+const filters = ref({
+    global: { value: null, matchMode: 'contains' },
+    name: { value: null, matchMode: 'contains' },
+    author: { value: null, matchMode: 'contains' }
+});
+
+const clearFilter = () => {
+    filters.value = {
+        global: { value: null, matchMode: 'contains' },
+        name: { value: null, matchMode: 'contains' },
+        author: { value: null, matchMode: 'contains' }
+    };
+};
+
+const deleteProductQuestion = async (productQuestionId) => {
+    try {
+        await productQuestionStore.deleteProductQuestion(productQuestionId);
+        toast.add({
+            severity: 'success',
+            summary: 'Success',
+            detail: 'Product question deleted successfully',
+            life: 3000
+        });
+        productQuestionStore.fetchProductQuestions();
+    } catch (error) {
+        toast.add({
+            severity: 'error',
+            summary: 'Error',
+            detail: 'Failed to delete product question',
+            life: 3000
+        });
+    }
+};
+
+const deleteSelectedProductQuestions = async () => {
+    try {
+        for (const productQuestion of selectedProductQuestions.value) {
+            await productQuestionStore.deleteProductQuestion(productQuestion.product_question_id);
+        }
+        toast.add({
+            severity: 'success',
+            summary: 'Success',
+            detail: `${selectedProductQuestions.value.length} product questions deleted successfully`,
+            life: 3000
+        });
+        selectedProductQuestions.value = [];
+        productQuestionStore.fetchProductQuestions();
+    } catch (error) {
+        toast.add({
+            severity: 'error',
+            summary: 'Error',
+            detail: 'Failed to delete selected product questions',
+            life: 3000
+        });
+    }
+};
+
+const onStatusChange = (status) => {
+    productQuestionStore.setStatus(status);
+};
+
+</script>
+
+<template>
+    
+    <div class="product-question-index">
+        <!-- Filter Container and Add Button in same line -->
+        <div class="flex justify-between items-center">
+            <!-- Filter Container -->
+            <div class="filter-container">
+                <div class="status-menu flex gap-4">
+                    <a 
+                        v-for="status in statusOptions" 
+                        :key="status"
+                        href="#"
+                        @click.prevent="onStatusChange(status)"
+                        :class="[
+                            'status-link px-4 py-2 -mb-px text-lg hover:text-blue-600',
+                            selectedStatus === status 
+                                ? 'border-b-2 border-blue-500 text-blue-600 font-semibold' 
+                                : 'text-gray-500'
+                        ]"
+                    >
+                        {{ status }}
+                        <span v-if="status !== 'All'" class="ml-2 text-sm text-gray-400">
+                            ({{ 
+                                productQuestions.filter(productQuestion => {
+                                    switch(status) {
+                                        case 'Approved': return productQuestion.status === 1;
+                                        case 'Pending': return productQuestion.status === 0;
+                                        case 'Spam': return productQuestion.status === 2;
+                                        case 'Trash': return productQuestion.status === 3;
+                                        default: return false;
+                                    }
+                                }).length 
+                            }})
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Alert -->
+        <div v-if="fb.errors.productQuestion" class="alert alert-danger" role="alert">
+            {{ fb.errors.productQuestion }}
+        </div>
+
+        <!-- Loading Spinner -->
+        <div v-if="fb.loading.productQuestion" class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <DataTable
+            v-model:filters="filters"
+            v-model:selection="selectedProductQuestions"
+            :value="filteredProductQuestions"
+            paginator
+            :rows="10"
+            dataKey="product_question_id"
+            filterDisplay="menu"
+            :loading="fb.loading.productQuestion"
+            :globalFilterFields="['name', 'author']"
+            class="p-datatable-lg"
+        >
+            <template #header>
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-2">
+                        <Button
+                            type="button"
+                            icon="pi pi-filter-slash"
+                            label="Clear"
+                            outlined
+                            @click="clearFilter()"
+                        />
+                        <Button
+                            v-if="selectedProductQuestions && selectedProductQuestions.length > 0"
+                            type="button"
+                            icon="pi pi-trash"
+                            label="Delete Selected"
+                            severity="danger"
+                            @click="deleteSelectedProductQuestions"
+                        />
+                    </div>
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search" />
+                        <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
+                    </span>
+                </div>
+            </template>
+
+            <!-- Selection Column -->
+            <Column selectionMode="multiple" headerStyle="width: 3rem" />
+
+            <!-- Question Column -->
+            <Column field="name" header="Name" :sortable="true" style="min-width: 350px">
+                <template #body="{ data }">
+                    <div class="flex flex-col">
+                        <span>{{ data.content }}</span>
+                    </div>
+                </template>
+            </Column>
+
+            <!-- Author Column -->
+            <Column field="author" header="Author" :sortable="true" style="min-width: 150px">
+                <template #body="{ data }">
+                    <div class="flex flex-col">
+                        <span>{{ data.author }}</span>
+                    </div>
+                </template>
+                <template #filter="{ filterModel }">
+                    <InputText
+                        v-model="filterModel.value"
+                        type="text"
+                        class="p-column-filter"
+                        placeholder="Search by author"
+                    />
+                </template>
+            </Column>
+
+            <!-- Product Column -->
+            <Column field="question_count" header="Total Questions" :sortable="true" style="width: 150px">
+                <template #body="{ data }">
+                    <span class="product-id">{{ data.question_count || '0' }}</span>
+                </template>
+            </Column>
+
+            <!-- Status Column -->
+            <Column field="status" header="Status" :sortable="true" style="width: 150px">
+                <template #body="{ data }">
+                    <Tag :value="getStatusText(data.status)" :severity="getStatusSeverity(data.status)" />
+                </template>
+            </Column>
+
+            <Column field="date" header="Date" :sortable="true" style="width: 150px">
+                <template #body="{ data }">
+                    <span>{{ formatFrontendDate(data.created_at) }}</span>
+                </template>
+            </Column>
+
+            <!-- Actions Column -->
+            <Column header="Actions" :exportable="false" style="width: 100px">
+                <template #body="{ data }">
+                    <div class="flex gap-2">
+                        <SplitButton
+                            label="View" 
+                            icon="pi pi-eye"
+                            :model="getActionItems(data)"
+                            severity="secondary"
+                            text
+                            class="p-button-sm"
+                            @click="handleViewClick(data)"
+                        />
+                    </div>
+                </template>
+            </Column>
+
+        </DataTable>
+
+        <!-- Product Question Details Modal -->
+        <Dialog 
+            v-model:visible="showModal" 
+            modal 
+            header="Product Question Details" 
+            :style="{ width: '70rem' }" 
+            :breakpoints="{ '1199px': '85vw', '575px': '95vw' }"
+            @hide="closeModal"
+        >
+            <div v-if="selectedProductQuestion" class="product-question-details">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Basic Information -->
+                    <div class="space-y-6">
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Author:</label>
+                            <span class="detail-value">{{ selectedProductQuestion.author || 'N/A' }}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Product ID:</label>
+                            <span class="detail-value">{{ selectedProductQuestion.product_id || 'N/A' }}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">User ID:</label>
+                            <span class="detail-value">{{ selectedProductQuestion.user_id }}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Question Count:</label>
+                            <span class="detail-value">{{ selectedProductQuestion.question_count || '0' }}</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Status and Dates -->
+                    <div class="space-y-6">
+                        <div class="detail-item">
+                            <label class="detail-label">Status:</label>
+                            <Tag 
+                                :value="getStatusText(selectedProductQuestion.status)" 
+                                :severity="getStatusSeverity(selectedProductQuestion.status)" 
+                            />
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Created At:</label>
+                            <span class="detail-value">{{ formatFrontendDate(selectedProductQuestion.created_at) }}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Updated At:</label>
+                            <span class="detail-value">{{ formatFrontendDate(selectedProductQuestion.updated_at) }}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <label class="detail-label">Parent ID:</label>
+                            <span class="detail-value">{{ selectedProductQuestion.parent_id || 'N/A' }}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Section -->
+                <div class="mt-8">
+                    <label class="detail-label block mb-3">Question Content:</label>
+                    <div class="content-box">
+                        {{ selectedProductQuestion.content || 'No content available' }}
+                    </div>
+                </div>
+            </div>
+            
+            <template #footer>
+                <div class="flex justify-end gap-3">
+                    <Button 
+                        label="Close" 
+                        icon="pi pi-times" 
+                        @click="closeModal" 
+                        class="p-button-text"
+                        size="large"
+                    />
+                </div>
+            </template>
+        </Dialog>
+    </div>
+</template>
+
+<style scoped>
+:deep(.p-datatable .p-datatable-tbody > tr > td) {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+}
+
+:deep(.p-datatable .p-datatable-thead > tr > th) {
+    padding: 1rem;
+}
+
+:deep(.p-splitbutton) {
+    .p-button {
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+        background-color: #fcfcfc;
+        border: 1px solid #e0dbdb;
+        color: #666;
+        &:hover {
+            background-color: #F3F3F3;
+            border-color: #e0dbdb;
+            color: #666;
+        }
+    }
+}
+
+:deep(.p-datatable) {
+    .p-datatable-header {
+        background-color: transparent;
+        border: none;
+        padding: 0 0 1rem 0;
+    }
+}
+
+/* Modal Styles */
+.product-question-details {
+    padding: 1.5rem 0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #374151;
+    min-width: 140px;
+    font-size: 1rem;
+}
+
+.detail-value {
+    color: #1f2937;
+    font-size: 1rem;
+}
+
+.content-box {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    min-height: 150px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+:deep(.p-dialog) {
+    .p-dialog-header {
+        background-color: #f8fafc;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 1.5rem 2rem;
+    }
+    
+    .p-dialog-content {
+        padding: 2rem;
+    }
+    
+    .p-dialog-footer {
+        background-color: #f8fafc;
+        border-top: 1px solid #e2e8f0;
+        padding: 1.5rem 2rem;
+    }
+    
+    .p-dialog-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+</style> 

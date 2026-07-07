@@ -1,0 +1,92 @@
+[
+  {
+    "subscription_plan_id": 1,
+    "name": "Basic Monthly",
+    "period": "Monthly",
+    "length": 1,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 1
+  },
+  {
+    "subscription_plan_id": 2,
+    "name": "Premium Annual",
+    "period": "Yearly",
+    "length": 12,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 1
+  },
+  {
+    "subscription_plan_id": 3,
+    "name": "Business Quarterly",
+    "period": "Quarterly",
+    "length": 3,
+    "cycle": "Manual",
+    "status": "Active",
+    "site_id": 2
+  },
+  {
+    "subscription_plan_id": 4,
+    "name": "Enterprise Biennial",
+    "period": "Yearly",
+    "length": 24,
+    "cycle": "Manual",
+    "status": "Inactive",
+    "site_id": 2
+  },
+  {
+    "subscription_plan_id": 5,
+    "name": "Starter Monthly",
+    "period": "Monthly",
+    "length": 1,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 3
+  },
+  {
+    "subscription_plan_id": 6,
+    "name": "Pro Quarterly",
+    "period": "Quarterly",
+    "length": 3,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 3
+  },
+  {
+    "subscription_plan_id": 7,
+    "name": "Team Annual",
+    "period": "Yearly",
+    "length": 12,
+    "cycle": "Manual",
+    "status": "Active",
+    "site_id": 4
+  },
+  {
+    "subscription_plan_id": 8,
+    "name": "Custom Monthly",
+    "period": "Monthly",
+    "length": 1,
+    "cycle": "Manual",
+    "status": "Inactive",
+    "site_id": 4
+  },
+  {
+    "subscription_plan_id": 9,
+    "name": "Basic Annual",
+    "period": "Yearly",
+    "length": 12,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 5
+  },
+  {
+    "subscription_plan_id": 10,
+    "name": "Premium Quarterly",
+    "period": "Quarterly",
+    "length": 3,
+    "cycle": "Auto",
+    "status": "Active",
+    "site_id": 5
+  }
+] 

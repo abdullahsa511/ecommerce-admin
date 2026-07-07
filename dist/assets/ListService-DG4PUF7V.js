@@ -1,0 +1,1 @@
+import{W as i}from"./index-DEsGlfRY.js";const r="http://localhost:8089/api/list/";class n{static getList(s){return new Promise((a,e)=>{i.get(r+s).then(t=>{a(t.data)}).catch(t=>e(t))})}}export{n as L};

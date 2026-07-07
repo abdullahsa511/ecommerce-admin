@@ -1,0 +1,72 @@
+[
+    {
+        "plugin_id": 1,
+        "thumb": "/images/plugins/bank-transfer.png",
+        "extension": "Bank transfer payment method",
+        "status": "Inactive",
+        "description": "Adds bank transfer payment method on checkout page",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "payment"
+    },
+    {
+        "plugin_id": 2,
+        "thumb": "/images/plugins/captcha.png",
+        "extension": "Captcha form protection",
+        "status": "Inactive",
+        "description": "Add captcha to site forms: user registration, password reset, comments, reviews etc.",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "spam"
+    },
+    {
+        "plugin_id": 3,
+        "thumb": "/images/plugins/cash-delivery.png",
+        "extension": "Cash on delivery payment method",
+        "status": "Inactive",
+        "description": "Adds cash on delivery payment method on checkout page",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "payment"
+    },
+    {
+        "plugin_id": 4,
+        "thumb": "/images/plugins/catalog.png",
+        "extension": "Catalog mode",
+        "status": "Inactive",
+        "description": "Hide add to cart and checkout and cart pages.",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "tools"
+    },
+    {
+        "plugin_id": 5,
+        "thumb": "/images/plugins/cdn.png",
+        "extension": "CDN",
+        "status": "Inactive",
+        "description": "Load images from CDN for faster page loading",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "performance"
+    },
+    {
+        "plugin_id": 6,
+        "thumb": "/images/plugins/chatgpt.png",
+        "extension": "ChatGPT",
+        "status": "Inactive",
+        "description": "Add ChatGPT prompt toolbar button to content editor on post and product edit page and chatgpt prompt component in site editor.",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "content"
+    },
+    {
+        "plugin_id": 7,
+        "thumb": "/images/plugins/contact.png",
+        "extension": "Contact form",
+        "status": "Active",
+        "description": "Create contact forms that sends email or saves data in the database",
+        "version": "0.1",
+        "author": "givanz",
+        "category": "email"
+    }
+] 

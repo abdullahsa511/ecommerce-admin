@@ -1,0 +1,110 @@
+[
+    {
+        "category_id": 1,
+        "name": "Toys",
+        "slug": "toys",
+        "parent_id": null
+    },
+    {
+        "category_id": 2,
+        "name": "Fashion",
+        "slug": "fashion",
+        "parent_id": null
+    },
+    {
+        "category_id": 3,
+        "name": "Smartphones",
+        "slug": "smartphones",
+        "parent_id": null
+    },
+    {
+        "category_id": 4,
+        "name": "Computers",
+        "slug": "computers",
+        "parent_id": null
+    },
+    {
+        "category_id": 5,
+        "name": "Windows",
+        "slug": "windows",
+        "parent_id": 4
+    },
+    {
+        "category_id": 6,
+        "name": "Games",
+        "slug": "games",
+        "parent_id": 4
+    },
+    {
+        "category_id": 7,
+        "name": "Electronics",
+        "slug": "electronics",
+        "parent_id": 4
+    },
+    {
+        "category_id": 8,
+        "name": "Games",
+        "slug": "games-electronics",
+        "parent_id": 7
+    },
+    {
+        "category_id": 9,
+        "name": "category 5",
+        "slug": "category-5",
+        "parent_id": 8
+    },
+    {
+        "category_id": 10,
+        "name": "category 4",
+        "slug": "category-4",
+        "parent_id": 8
+    },
+    {
+        "category_id": 11,
+        "name": "Software",
+        "slug": "software",
+        "parent_id": 7
+    },
+    {
+        "category_id": 12,
+        "name": "Appliances",
+        "slug": "appliances",
+        "parent_id": 7
+    },
+    {
+        "category_id": 13,
+        "name": "Tablets",
+        "slug": "tablets",
+        "parent_id": 7
+    },
+    {
+        "category_id": 14,
+        "name": "Desktops",
+        "slug": "desktops",
+        "parent_id": 7
+    },
+    {
+        "category_id": 15,
+        "name": "Tablets",
+        "slug": "tablets-main",
+        "parent_id": null
+    },
+    {
+        "category_id": 16,
+        "name": "Home and Kitchen",
+        "slug": "home-and-kitchen",
+        "parent_id": null
+    },
+    {
+        "category_id": 17,
+        "name": "Books",
+        "slug": "books",
+        "parent_id": null
+    },
+    {
+        "category_id": 18,
+        "name": "category 1",
+        "slug": "category-1",
+        "parent_id": null
+    }
+] 

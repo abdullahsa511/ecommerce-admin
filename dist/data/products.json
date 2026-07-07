@@ -1,0 +1,92 @@
+[
+    {
+        "product_id": "1001",
+        "thumbnail": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&q=80",
+        "name": "Smartphone X",
+        "price": 599.99,
+        "stock": 50,
+        "date_added": "2024-02-15T10:30:00Z",
+        "date_updated": "2024-02-15T10:30:00Z"
+    },
+    {
+        "product_id": "1002",
+        "thumbnail": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&q=80",
+        "name": "Laptop Pro",
+        "price": 1299.99,
+        "stock": 25,
+        "date_added": "2024-02-14T15:45:00Z",
+        "date_updated": "2024-02-14T15:45:00Z"
+    },
+    {
+        "product_id": "1003",
+        "thumbnail": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=80",
+        "name": "Wireless Earbuds",
+        "price": 149.99,
+        "stock": 100,
+        "date_added": "2024-02-13T09:20:00Z",
+        "date_updated": "2024-02-13T09:20:00Z"
+    },
+    {
+        "product_id": "1004",
+        "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&q=80",
+        "name": "Running Shoes",
+        "price": 89.99,
+        "stock": 75,
+        "date_added": "2024-02-12T14:20:00Z",
+        "date_updated": "2024-02-12T14:20:00Z"
+    },
+    {
+        "product_id": "1005",
+        "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&q=80",
+        "name": "Smart Watch",
+        "price": 199.99,
+        "stock": 15,
+        "date_added": "2024-02-11T11:30:00Z",
+        "date_updated": "2024-02-11T11:30:00Z"
+    },
+    {
+        "product_id": "1006",
+        "thumbnail": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&q=80",
+        "name": "Camera 4K",
+        "price": 849.99,
+        "stock": 0,
+        "date_added": "2024-02-10T16:45:00Z",
+        "date_updated": "2024-02-10T16:45:00Z"
+    },
+    {
+        "product_id": "1007",
+        "thumbnail": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=200&q=80",
+        "name": "Gaming Mouse",
+        "price": 59.99,
+        "stock": 200,
+        "date_added": "2024-02-09T13:15:00Z",
+        "date_updated": "2024-02-09T13:15:00Z"
+    },
+    {
+        "product_id": "1008",
+        "thumbnail": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=200&q=80",
+        "name": "Mechanical Keyboard",
+        "price": 129.99,
+        "stock": 45,
+        "date_added": "2024-02-08T10:20:00Z",
+        "date_updated": "2024-02-08T10:20:00Z"
+    },
+    {
+        "product_id": "1009",
+        "thumbnail": "https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=200&q=80",
+        "name": "Wireless Mouse",
+        "price": 29.99,
+        "stock": 5,
+        "date_added": "2024-02-07T09:30:00Z",
+        "date_updated": "2024-02-07T09:30:00Z"
+    },
+    {
+        "product_id": "1010",
+        "thumbnail": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&q=80",
+        "name": "USB-C Hub",
+        "price": 45.99,
+        "stock": 150,
+        "date_added": "2024-02-06T15:40:00Z",
+        "date_updated": "2024-02-06T15:40:00Z"
+    }
+] 

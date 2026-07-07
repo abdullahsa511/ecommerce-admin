@@ -1,0 +1,74 @@
+[
+  {
+    "currency_id": 1,
+    "symbol": "$",
+    "code": "USD",
+    "name": "US Dollar",
+    "value": 1,
+    "status": "Active",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 2,
+    "symbol": "€",
+    "code": "EUR",
+    "name": "Euro",
+    "value": 0.93492895,
+    "status": "Active",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 3,
+    "symbol": "¥",
+    "code": "CNY",
+    "name": "Chinese Yuan Renminbi",
+    "value": 6.78253553,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 4,
+    "symbol": "₹",
+    "code": "INR",
+    "name": "Indian Rupee",
+    "value": 82.34667165,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 5,
+    "symbol": "₽",
+    "code": "RUB",
+    "name": "Russian Ruble",
+    "value": 56.4036,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 6,
+    "symbol": "RON",
+    "code": "RON",
+    "name": "Romanian Leu",
+    "value": 5,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 7,
+    "symbol": "£",
+    "code": "GBP",
+    "name": "Pound Sterling",
+    "value": 0.82318624,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  },
+  {
+    "currency_id": 8,
+    "symbol": "$",
+    "code": "AUD",
+    "name": "Australian Dollar",
+    "value": 1.44409125,
+    "status": "Disabled",
+    "last_updated": "2024-01-01T00:00:00Z"
+  }
+] 

@@ -1,0 +1,53 @@
+## 16-10-2025 by abdullah
+Showroom:
+1. address, email and phone colum data not updated -done
+2. phone and email validation. - done
+3. without fillup reqired field save/submit then show please field is required. - done
+4. status not workable - done
+5. list show html tag - done
+6. address, phone and email show table list -done
+7. filter not work in the table.
+
+Showroom section
+1. title wise slug is not update. - done
+2. status not work in the edit. - done
+3. after edit section redirect edited slug url. - done
+
+Section product
+1. exsiting product validation add/ duplicate check - done
+2. delete after product not remove list without load. - done
+
+Section image
+1. remove edit button. - done
+
+## 18-10-2025
+Project csv file import:
+1. not import project csv file.
+2. 
+
+Project add:
+1. not show add page - done
+vue-router.mjs:51 [Vue Router warn]: uncaught error during route navigation:
+vue-router.mjs:3618 SyntaxError: The requested module '/src/models/Project.ts' does not provide an export named 'Project' (at ProjectAdd.vue:4:10)
+vue-router.mjs:51 [Vue Router warn]: Unexpected error when starting the router: SyntaxError: The requested module '/src/models/Project.ts' does not provide an export named 'Project' (at ProjectAdd.vue:4:10)
+2.data not insert in the database but main image one and two already upload image. -done
+3.Featured Media - done
+xhr.js:195  POST http://localhost:8089/api/projects/undefined/upload 500 (Internal Server Error)
+ProjectService.js:209 Error uploading files: AxiosError {message: 'Request failed with status code 500', name: 'AxiosError', code: 'ERR_BAD_RESPONSE', config: {…}, request: XMLHttpRequest,
+ProjectSidebar.vue:62 Error uploading site logo: AxiosError {message: 'Request failed with status code 500', name: 'AxiosError', code: 'ERR_BAD_RESPONSE', config: {…}, request: XMLHttpRequest, …}
+4. location autocomplete api problem.
+5. not alert error message.
+
+Project edit:
+1. after successfull update data then customer and location empty.
+2. data not update but show successfull alert. 
+3. feature image, main_image_one and main_image_two not upload - done.
+
+Project list: 
+1. add filtering.
+
+
+
+Database import command:
+docker exec + MySQL CLI => docker exec -i 4d89dfb454ca mysql -u mvc -p mvc < /home/developer/krost-php-mvc/mvc.sql
+MySQL container => mysql -u mvc -p mvc < /home/developer/krost-php-mvc/mvc.sql
